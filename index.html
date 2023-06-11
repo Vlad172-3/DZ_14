@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DZ_7</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="container mt-3">
+            <form>
+                <div class="mb-3 row">
+                    <label for="Ot" class="col-4 col-form-label">От</label>
+                    <div class="col-8">
+                        <input type="number" class="form-control" name="number" id="Ot" placeholder="Ведите число...">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputName" class="col-4 col-form-label">До</label>
+                    <div class="col-8">
+                        <input type="number" class="form-control" name="number" id="Do" placeholder="Ведите число...">
+                    </div>
+                </div>
+                <div style="display: flex;" class="flex-row">
+                        <div class="col-sm-8">
+                            <button type="button" class="btn btn-outline-success" onclick="addTime()">Start</button>
+                        </div>
+                        <div class="col-sm-8">
+                            <button type="button" class="btn btn-outline-danger" onclick="resetTimer()">Reset</button>
+                        </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <h3 id="display_time"></h3>
+        </div>
+    </body>
+    <script src="my.js"></script>
+</html>
